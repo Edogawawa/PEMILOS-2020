@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<html>
+<head>
+  <title><!DOCTYPE html>
+  <html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  
+  </body>
+  </html></title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,32 +32,333 @@
   <!-- CSS -->
   <style>
 
+    @font-face {
+      font-family: "Noto Serif";
+      src: url('assets/fonts/NotoSerifDisplay-Black.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: "Verve Alternate";
+      src: url('assets/fonts/VerveAlternate.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url('assets/fonts/HelveticaNeue.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: "Helvetica Neue Med";
+      src: url('assets/fonts/HelveticaNeueMed.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: "Helvetica Neue Bold";
+      src: url('assets/fonts/Helvetica\ Neu\ Bold.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: "Helvetica Neue Light";
+      src: url('assets/fonts/HelveticaNeue\ Light.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: "Intro Bold Caps";
+      src: url('assets/fonts/Intro-Bold-Caps-Regular.ttf') format('truetype');
+    }
+
     #header {
-      /* opacity: 0.6; */
-      /* height: 0px; */
-      position: absolute !important;
-      z-index: 1 !important;
-      background-color: rgba(red, green, blue, 0%);
+      background-color: rgba(0, 0, 0, 0) !important;
+      position: absolute;
+    }
+
+    #header .logo h1 a {
+      font-family: 'Intro Bold Caps';
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: whitesmoke !important;
+      margin-left: 50px;
+    }
+
+    #header ul li a {
+      overflow: hidden;
+      display: none;
+      visibility: hidden;
     }
 
     #hero {
-      background-image: url(assets/img/bg_website.png);
-      min-height: 500px;
+      background-image: url(assets/img/phon-desu/hero-res.png);
+      margin-top: 0px !important;
     }
 
-    .faq .container {
-      min-height: 500px;
+    #pricing-1 {
+      background-image: url(assets/img/phon-desu/vid_terbaru_res.png);
+      height: 640px;
+    }
+
+    #pricing-1 .container .box {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+    }
+
+    .team {
+      background-image: url(assets/img/phon-desu/5-res.png);
+    }
+
+    .team .member {
+      width: 330px !important;
+      height: 209px !important;
+      margin-top: 50px;
+    }
+
+    .team .box .member p {
+        visibility: hidden;
+    }
+
+    .team .box-1 .member {
+        background-image: url(assets/img/phon-desu/wawancara-res.png);
+    }
+
+    .team .box-2 .member {
+        background-image: url(assets/img/phon-desu/forum-res.png) !important;
+    }
+
+    .team .box-3 .member {
+        background-image: url(assets/img/phon-desu/orasi-res.png) !important;
+    }
+
+    .team .box-4 .member {
+        background-image: url(assets/img/phon-desu/debprok-res.png) !important;
+    }
+
+    .team .box-5 .member {
+        background-image: url(assets/img/phon-desu/hari-res.png) !important;
+    }
+
+    .wawancara {
+      margin-top: -60px;
+    }
+
+    .wawancara .judul {
+      background-image: url(assets/img/phon-desu/HEADER-ARTIKEL-res.png);
+    }
+
+    .wawancara h2 {
+      font-family: 'Intro Bold Caps';
+      font-size: 27px !important;
+      color: whitesmoke !important;
+      margin-top: 40px;
+    }
+
+    .wawancara-isi-judul {
+      margin-top: 20px;
+    }
+
+    .wawancara h4 {
+      font-family: 'Intro Bold Caps';
+      text-decoration: underline;
+      /* font-size: 27px !important; */
+    }
+
+    .wawancara h6 {
+      font-family: 'Intro Bold Caps';
+      /* font-size: 27px !important; */
+    }
+
+    .wawancara .content {
+      margin-top: -20px;
+    }
+
+    .dokumentasi {
+      background-image: url(assets/img/phon-desu/6-res.png) !important;
+      background-repeat: no-repeat;
+      background-color: #f4900c;
+      margin-top: -30px !important;
+    }
+
+    .dokumentasi .container {
+      margin-top: 100px;
+    }
+
+    /* .dokumentasi-judul .section-title h2 {
+      visibility: hidden;
+    } */
+
+    .dokumentasi .icon-box {
+      width: 300px;
+      height: 300px;
+      padding: 30px;
+      /* position: relative; */
+      top: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      background: royalblue;
+      box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+      transition: all 0.3s ease-in-out;
+      border-radius: 8px;
+      z-index: 1;
+      margin-top: 10px;
+    }
+
+    .dokumentasi .icon-box::before {
+      content: '';
+      position: absolute;
+      background: #e1f0fa;
+      right: -60px;
+      top: -40px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      transition: all 0.3s;
+      z-index: -1;
+    }
+
+    .dokumentasi .icon-box:hover::before {
+      background: #3498db;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+    }
+
+    .about {
+      background-color: #b60707;
+    }
+
+    .about .merah-1   {
+      /* position: absolute;
+      z-index: 0;
+      display: inline-block; */
+      height: 650px;
+      background-image: url(assets/img/phon-desu/2-res.png); 
+      background-color: #b60707;
+      background-repeat: no-repeat;
+      background-attachment: scroll !important;
+      background-position: center center;
+      background-size: cover;
+      margin-top: -60px;
+    }
+
+    .about .merah-1 p {
+      font-size: 14px;
+      color: white;
+      margin-top: 100px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      text-align: justify;
+    }
+
+    .about .merah-2  {
+      height: 650px;
+      background-image: url(assets/img/phon-desu/3-res.png);
+      background-color: #b60707;
+      background-repeat: no-repeat;
+      background-attachment: scroll !important;
+      background-position: center center;
+      background-size: cover;
+      margin-top: 100px;
+    }
+
+    .about .merah-2 h5 {
+      color: white;
+      margin-top: -60px;
+      font-size: 12px;
+      margin-top: -150px;
+    }
+    
+    .about .merah-2 p {
+      color: white;
+      font-size: 12px;
+    }
+
+    .about .merah-3  {
+      height: 650px;
+      background-image: url(assets/img/phon-desu/4-res.png);
+      background-repeat: repeat-x;
+      background-color: #b60707;
+      background-attachment: scroll !important;
+      background-position: center center;
+      background-size: cover;
+      margin-top: 20px;
+    }
+
+    .about .merah-3 p {
+      color: white;
+      font-size: 12px;
+    }
+
+    #pricing-2 {
+      background-image: url(assets/img/phon-desu/vid_tatacara_phon_small.png);
+      height: 640px;
+    }
+
+    #pricing-2 .container .box {
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+    }
+
+    .sponsor {
+      background-image: url(assets/img/phon-desu/7-res.png);
+      background-repeat: no-repeat;
+      background-color: #044cac;
+
+    }
+
+    .sponsor .icon-box {
+      width: 300px;
+      height: 300px;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      background: rgb(233, 142, 72);
+      background-image: url(assets/img/revisi_apa_pemilos/6-sponsor-try.png);
+      box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+      transition: all 0.3s ease-in-out;
+      border-radius: 8px;
+      z-index: 1;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sponsor .sponsor-box:first-child {
+      margin-top: 100px;
+    }
+
+    .sponsor .icon-box::before {
+      content: '';
+      position: absolute;
+      background: #e1f0fa;
+      right: -60px;
+      top: -40px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      transition: all 0.3s;
+      z-index: -1;
+    }
+
+    .sponsor .icon-box:hover::before {
+      background: #3498db;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
     }
 
     .services {
       background-color: #b5cdf1;
     }
 
-
     .services .mpk .title {
       display: inline-block;
       margin-left: 20px;
-      margin-top: ;
       top: -5px;
       position: relative;
     }    
@@ -57,9 +374,12 @@
     }
 
     .services .tentang_kami .description {
+      font-family: 'Intro Bold Caps';
       font-size: 32px;
       line-height: 28px;
-      margin: 20px auto -10px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      text-align: center;
     }
 
     .services .icon-box:hover .logo_mpk {
@@ -75,8 +395,6 @@
       background-repeat: no-repeat;
       background-position: center center;
       position: relative;
-      left: ;
-      top: ;
       z-index: 200;
       height: 140px;
       width: 100px;
@@ -90,6 +408,35 @@
       position: relative;
       top: 0px;
     }
+
+    .services .mpk .sosmed {
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+      justify-content: center;
+    } 
+
+    .services .mpk .sosmed p a {
+      font-weight: 600;
+      font-style: italic;
+      color: whitesmoke;
+    }
+
+    .services .mpk .sosmed a::before {
+      content: '\A';
+      display: block;
+      white-space: pre;
+    }
+
+    .services .mpk .sosmed p {
+      margin-top: -200px;
+    }
+
+    /* .services .mpk .sosmed p::before {
+      content: '\A';
+      display: block;
+      white-space: pre;
+    } */
 
     .mpk .title a {
       color: #222222 !important;
@@ -119,24 +466,337 @@
     } */
 
 
-    /* device gede */
-    @media (min-width: 992px) { 
 
-      .more-services .logo_main .logo_img .card {
-      background-image: url(assets/img/pemilos_2020.png) !important; 
-      /* background-color: royalblue; */
-      border: none;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      position: absolute;
-      width: 350px;
-      height: 350px !important;
-      border-radius: 0% !important;
-      left: 150px;
-      top: 5px;
-      margin-bottom: 500px  !important;
-    }
+    /* device gede */
+    @media (min-width: 1200px) { 
+      /* #header .container {
+        padding-bottom: 50px;
+      }
+
+      #header .container .logo img {
+        width: 50px !important;
+        height: 70px !important;
+        position: relative;
+      } */
+
+      #header {
+        /* opacity: 0.6; */
+        /* height: 0px; */
+        position: absolute !important;
+        z-index: 1 !important;
+        background-color: rgba(red, green, blue, 0) !important;
+      }
+
+      #header .container .logo .nduwur a {
+        font-family: 'Intro Bold Caps';
+        font-size: 25px;
+        letter-spacing: 0px;
+        color: whitesmoke;
+        margin-left: 30px;
+      }
+
+      /* #header .container .logo .ngisor a {
+        font-family: 'Helvetica Neue Light';
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: #af201f;
+      } */
+
+      /* #header .container .logo h1 a {
+        line-height: 20px;
+        display: ;
+      } */
+
+      #header .nav-menu {
+        position: relative;
+        left: 75px;
+      }
+
+      #header .nav-menu ul li a {
+      font-family: 'Intro Bold Caps', cursive;
+      font-size: 24px;
+      color: white;
+      visibility: visible !important;
+      display: inline-block !important;
+      }
+
+      #hero {
+        background-image: url(assets/img/pemilos_newest.png);
+        height: 650px;
+        background-repeat: no-repeat;
+        background-attachment: scroll !important;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      #hero img {
+        width: 500px;
+        margin-top: 100px;
+      }
+
+      #hero .tanamken {
+        margin-top: 50px;
+      }
+
+      #hero h5 {
+        font-family: 'Verve Alternate';
+        font-size: 27px;
+        font-style: italic;
+        word-spacing: 3px;
+        line-height: 25px;
+        color: #b32927;
+      }
+
+      #hero .midun {
+        margin-top: 350px;
+        width: 48px;
+      }
+
+      #pricing-1 .container {
+        background-image: url(assets/img/vid_terbaru.png);
+        min-width: 1440px;
+        min-height: 650px !important;
+        background-repeat: repeat-x;
+        background-color: #b60707;
+        background-attachment: scroll !important;
+        background-position: center center;
+        background-size: cover;
+        padding-left: 0px !important;
+        margin-left: 0px  !important;
+        margin-top: -60px;
+      }
+
+      #pricing-1 .container .box {
+        margin-top: 285px !important;
+        margin-left: 20px !important;
+      }
+
+      .team {
+        background-image: url(assets/img/revisi_apa_pemilos/5.png);
+        height: 650px;
+        margin-top: -60px;
+      }
+
+      .team .member {
+        height: 200px !important;
+      }
+
+      .team .box .member p {
+        visibility: hidden;
+      }
+
+      .team .box-1 .member {
+        background-image: url(assets/img/informasi/Wawancara-res.png);
+      }
+
+      .team .box-2 .member {
+        background-image: url(assets/img/informasi/Forum-8-Besar-res.png) !important;
+      }
+
+      .team .box-3 .member {
+        background-image: url(assets/img/informasi/orasi-dan-kampaye-res.png) !important;
+      }
+
+      .team .box-4 .member {
+        background-image: url(assets/img/informasi/debat-proker-res.png) !important;
+      }
+
+      .team .box-5 .member {
+        background-image: url(assets/img/informasi/pemungutan-suara-res.png) !important;
+      }
+
+      .team .informasi {
+        margin-top: 170px;
+      }
+
+      .wawancara {
+        margin-top: -60px;
+      }
+
+      .wawancara .judul {
+        background-image: url(assets/img/HEADER-ARTIKEL.png);
+        height: 150px;
+        margin-bottom: 50px;
+      }
+
+      .wawancara h2 {
+        font-family: 'Intro Bold Caps';
+        margin-top: 55px;
+        color: whitesmoke !important;
+      }
+
+      .wawancara .wawancara-isi-judul h4,
+      .wawancara .wawancara-isi-judul h6 {
+        font-family: 'Intro Bold Caps';
+        font-style: normal;
+      }
+
+      .wawancara .wawancara-isi-judul h4 {
+        text-decoration: underline ;
+      }
+
+      .dokumentasi {
+        height: 650px;
+      }
+
+      /* .dokumentasi-judul {
+        background-image: url(assets/img/HEADER-ARTIKEL.png);
+      } */
+
+      .dokumentasi {
+        background-image: url(assets/img/dokumentasi.png) !important;
+      }
+
+      .dokumentasi-judul .section-title h2 {
+        color: #011f1d;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      .dokumentasi .icon-box {
+        width: 150px;
+        height: 150px;
+        padding: 30px;
+        position: relative;
+        top: 150px;
+        overflow: hidden;
+        background: rgb(233, 142, 72);
+        box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+        transition: all 0.3s ease-in-out;
+        border-radius: 8px;
+        z-index: 1;
+        margin-top: 80px;
+      }
+
+      .dokumentasi .icon-box::before {
+        content: '';
+        position: absolute;
+        background: #e1f0fa;
+        right: -60px;
+        top: -40px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        transition: all 0.3s;
+        z-index: -1;
+      }
+
+      .dokumentasi .icon-box:hover::before {
+        background: #3498db;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+      }
+
+      .about {
+        margin-top: -60px;
+      }
+
+      .about .merah-1   {
+        /* position: absolute;
+        z-index: 0;
+        display: inline-block; */
+        min-width: 1440px;
+        height: 650px;
+        background-image: url(assets/img/revisi_apa_pemilos/2.png); 
+        background-color: #b60707;
+        background-repeat: no-repeat;
+        background-attachment: scroll !important;
+        background-position: center center;
+        background-size: cover;
+        padding-left: 0px !important;
+        margin-left: 0px  !important;
+      }
+
+      .about .merah-1 p {
+        font-size: 18px;
+        color: white;
+        margin-top: 200px;
+        /* margin-left: -50px; */
+      }
+
+      .about .merah-2 h5 {
+        color: white;
+        margin-top: -60px;
+        font-size: 20px;
+        margin-top: -150px;
+      }
+    
+      .about .merah-2 p {
+        color: white;
+        font-size: 16px;
+      }
+
+      .about .merah-2  {
+        min-width: 1440px;
+        height: 600px;
+        background-image: url(assets/img/revisi_apa_pemilos/3.png);
+        background-color: #b60707;
+        background-repeat: no-repeat;
+        background-attachment: scroll !important;
+        background-position: center center;
+        background-size: cover;
+        padding-left: 0px !important;
+        margin-left: 0px  !important;
+      }
+
+      .about .merah-3  {
+        min-width: 1440px;
+        min-height: 650px;
+        background-image: url(assets/img/revisi_apa_pemilos/4.png);
+        background-repeat: repeat-x;
+        background-color: #b60707;
+        background-attachment: scroll !important;
+        background-position: center center;
+        background-size: cover;
+        padding-left: 0px !important;
+        margin-left: 0px  !important;
+      }
+
+      .about .merah-3 p {
+        color: white;
+        font-size: 16px;
+      }
+
+
+      #pricing-2 {
+        background-image: url(assets/img/vid_tatacara.png);
+        width: 1350px;
+        height: 650px;
+        background-repeat: repeat-x;
+        background-color: #b60707;
+        background-attachment: scroll !important;
+        background-position: center center;
+        background-size: cover;
+        padding-left: 0px !important;
+        margin-top: -60px !important;
+      }
+
+      #pricing-2 .container .box {
+        margin-top: 285px;
+        margin-left: 100px;
+        position: relative;
+        top: -60px;
+        right: 30px;
+      }
+
+      /* .more-services .logo_main .logo_img .card {
+        background-image: url(assets/img/pemilos_2020.png) !important; 
+        background-color: royalblue;
+        border: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        width: 350px;
+        height: 350px !important;
+        border-radius: 0% !important;
+        left: 150px;
+        top: 5px;
+        margin-bottom: 500px  !important;
+      }
 
       .more-services .logo_main_text {
         display: inline-block !important;
@@ -145,7 +805,76 @@
         top: 60px;
         line-height: 90%;
         font-size: 40px !important;
-    }
+      }
+
+      .more-services .container .perlogoan {
+      margin-top: 200px !important;
+      } */
+
+      .sponsor {
+        background-image: url(assets/img/revisi_apa_pemilos/6.png);
+        height: 650px;
+        margin-top: -60px;
+      }
+
+      .sponsor .icon-box {
+        width: 150px;
+        height: 150px;
+        padding: 30px;
+        position: relative;
+        top: 300px;
+        overflow: hidden;
+        background: rgb(233, 142, 72);
+        background-image: url(assets/img/revisi_apa_pemilos/6-sponsor-try.png);
+        box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+        transition: all 0.3s ease-in-out;
+        border-radius: 8px;
+        z-index: 1;
+      }
+
+      .sponsor .sponsor-box:first-child {
+        margin-top: 0;
+      }
+
+      .sponsor .icon-box::before {
+        content: '';
+        position: absolute;
+        background: #e1f0fa;
+        right: -60px;
+        top: -40px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        transition: all 0.3s;
+        z-index: -1;
+      }
+
+      .sponsor .icon-box:hover::before {
+        background: #3498db;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+      }
+
+      /* .sponsor .icon {
+        margin: 0 auto 20px auto;
+        padding-top: 10px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background: #3498db;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .sponsor .icon i {
+        font-size: 36px;
+        line-height: 1;
+        color: #fff;
+      } */
 
       .services .mpk .logo_mpk {
       background-image: url(assets/img/logo_mpk_small.png) !important;
@@ -155,8 +884,6 @@
       background-repeat: no-repeat;
       background-position: center center;
       position: absolute;
-      left: ;
-      top: ;
       z-index: 200;
       height: 140px;
       width: 100px;
@@ -168,16 +895,37 @@
       color: white;
     }
 
-    .more-services .container .perlogoan {
-      margin-top: 200px !important;
+    .services .mpk .sosmed {
+      margin-top: 10px;
+      margin-left: 170px;
+      margin-right: auto;
+      margin-bottom: -10px;
+      display: inline !important;
+      float: left !important;
+      justify-content: center;
     }
-    
+
+    .services .sosmed p a {
+      font-weight: 600;
+      font-style: italic;
+      color: whitesmoke;
+      margin-right: 20px;
+    }
+
+    .services .mpk .sosmed a::before {
+      content: '';
+      display: none;
+      white-space: none;
+    }
+
   }
 
   </style>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Bebas Neue -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -205,42 +953,47 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>PEMILOS 2020</span></a></h1>
+      <div class="logo mr-auto ">
+        <!-- <img src="assets/img/logo_mpk_ndas.png" alt=""> -->
+        <h1 class="text-light nduwur"><a href="index.html">MPK SMA NEGERI 3 SEMARANG</a></h1>
+        <!-- <h1 class="text-light ngisor"><a href="index.html">PROUDLY PRESENTS</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#hero">BERANDA</a></li>
-          <li><a href="#about">TENTANG</a></li>
-          <li><a href="#services">INFORMASI</a></li>
-          <li><a href="#pricing">TATA CARA</a></li>
-          <!-- <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li> -->
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
-          <!-- <li><a href="#contact">Contact</a></li> -->
+      <nav class="nav-menu d-none d-lg-block d-flex align-items-end">
+        <!-- <div class="col-lg-12"> -->
+          <ul>
+            <li class="active"><a href="#hero">BERANDA</a></li>
+            <li><a href="#about">TENTANG</a></li>
+            <li><a href="#services">INFORMASI</a></li>
+            <li><a href="#pricing-2">TATA CARA</a></li>
+            <!-- <li><a href="#team">Team</a></li>
+            <li><a href="#pricing">Pricing</a></li> -->
+            <!-- <li class="drop-down"><a href="">Drop Down</a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="drop-down"><a href="#">Drop Down 2</a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+                <li><a href="#">Drop Down 5</a></li>
+              </ul>
+            </li> -->
+            <!-- <li><a href="#contact">Contact</a></li> -->
 
-          <li class="get-started"><a href="#about">Get Started</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+            <!-- <li class="get-started"><a href="#about">Get Started</a></li> -->
+          </ul>
+        <!-- </div> -->
+      </nav>
+      <!-- .nav-menu -->
 
     </div>
   </header>
@@ -251,17 +1004,30 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">PEMILOS 2020</h1>
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="200">
+          <!-- <h1 data-aos="fade-up">PEMILOS 2020</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Volition of Parity</h2>
           <div data-aos="fade-up" data-aos-delay="800">
             <a href="#about" class="btn-get-started scrollto">Selengkapnya</a>
-          </div>
+          </div> -->
+
+          <!-- <img src="assets/img/referendum.png" alt=""> -->
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+      </div>
+
+      <div class="row tanamken">
+        <div class="col-lg-6 order-1 order-lg-2 text-lg-center" data-aos="fade-left" data-aos-delay="200">
+          <!-- <h5>"tanamkan jiwa demokrasi,</h5>
+          <h5>change your fantasy into reality!"</h5> -->
           <!-- <img src="assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
         </div>
       </div>
+
+      <!-- <div class="row">
+        <div class="col-lg-6 order-1 order-lg-2 text-lg-center" data-aos="fade-down" data-aos-delay="200">
+          <a href="#pricing"><img src="assets/img/miduntes.png" class="img-fluid animated midun" alt=""></a>
+        </div>
+      </div> -->
     </div>
 
   </section>
@@ -269,12 +1035,12 @@
 
   <!-- Video Terbaru -->
 
-  <section id="pricing" class="pricing">
+  <section id="pricing-1" class="pricing">
     <div class="container">
 
       <div class="section-title">
-        <h2>Video Terbaru</h2>
-        <p>Sit sint consectetur velit nemo qui impedit suscipit alias ea</p>
+        <!-- <h2>Video Terbaru</h2> -->
+        <!-- <p>Sit sint consectetur velit nemo qui impedit suscipit alias ea</p> -->
       </div>
 
       <div class="row d-flex justify-content-center">
@@ -296,7 +1062,7 @@
           </div>
         </div> -->
 
-        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+        <div class="col-lg-3 col-md-6 mt-4 mt-md-0c offset-lg-3">
           <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
             <h3>Video</h3>
 
@@ -335,84 +1101,127 @@
     <section id="team" class="team section-bg">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
+        <!-- <div class="section-title" data-aos="fade-up">
           <h2>Informasi</h2>
-          <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
-        </div>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+        </div> -->
 
-        <div class="row justify-content-center">
+        <div class="row informasi justify-content-center">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="box box-1 col-lg-2 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <div>
+                  <p>
+                    ipsum dolor sit amet consectetur adipisicing elit. Officia illo suscipit earum aut quaerat obcaecati, numquam laboriosam. Incidunt, repudiandae eius.
+                  </p>
+                </div>
+                <!-- <img src="assets/img/informasi/Wawancara.png" class="img-fluid" alt=""> -->
+                <!-- <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
                   <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
-              <div class="member-info">
+              <!-- <div class="member-info">
                 <h4><a href="#about">Sosialisasi</a></h4>
                 <span><p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur?</p></span>
-              </div>
+              </div> -->
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="box box-2 col-lg-2 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <div>
+                  <p>
+                    ipsum dolor sit amet consectetur adipisicing elit. Officia illo suscipit earum aut quaerat obcaecati, numquam laboriosam. Incidunt, repudiandae eius.
+                  </p>
+                </div>
+                <!-- <img src="assets/img/informasi/Forum 8 Besar.png" class="img-fluid" alt=""> -->
+                <!-- <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
                   <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
-              <div class="member-info">
+              <!-- <div class="member-info">
                 <h4>Wawancara</h4>
                 <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quis!</p></span>
-              </div>
+              </div> -->
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="box box-3 col-lg-2 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <div>
+                  <p>
+                    ipsum dolor sit amet consectetur adipisicing elit. Officia illo suscipit earum aut quaerat obcaecati, numquam laboriosam. Incidunt, repudiandae eius.
+                  </p>
+                </div>
+                <!-- <img src="assets/img/informasi/orasi dan kampaye.png" class="img-fluid" alt=""> -->
+                <!-- <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
                   <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
-              <div class="member-info">
+              <!-- <div class="member-info">
                 <h4>Forum 8 Besar</h4>
                 <span><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, non!</p></span>
-              </div>
+              </div> -->
             </div>
           </div>
 
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="box box-4 col-lg-2 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <div>
+                  <p>
+                    ipsum dolor sit amet consectetur adipisicing elit. Officia illo suscipit earum aut quaerat obcaecati, numquam laboriosam. Incidunt, repudiandae eius.
+                  </p>
+                </div>
+                <!-- <img src="assets/img/informasi/debat proker.png" class="img-fluid" alt=""> -->
+                <!-- <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
                   <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
-              <div class="member-info">
+              <!-- <div class="member-info">
                 <h4>Amanda Jepson</h4>
                 <span>Accountant</span>
-              </div>
+              </div> -->
             </div>
-          </div> -->
+          </div>
+
+          <div class="box box-5 col-lg-2 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="500">
+              <div class="member-img">
+                <div>
+                  <p>
+                    ipsum dolor sit amet consectetur adipisicing elit. Officia illo suscipit earum aut quaerat obcaecati, numquam laboriosam. Incidunt, repudiandae eius.
+                  </p>
+                </div>
+                <!-- <img src="assets/img/informasi/pemungutan suara.png" class="img-fluid" alt=""> -->
+                <!-- <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div> -->
+              </div>
+              <!-- <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div> -->
+            </div>
+          </div>
 
         </div>
 
@@ -420,13 +1229,166 @@
     </section>
   <!-- End Team Section -->
 
+
+  <!-- Wawancara Section -->
+
+  <section class="wawancara">
+
+    <div class="row judul">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Wawancara</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container wawancara-isi">
+      <div class="row wawancara-isi-judul text-center">
+        <div class="col-lg-12 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <h4>Tahap 1 Pemilos 2020</h4>
+          <h6>Senin, 2 November 2020</h6>
+          <br>
+        </div>
+      </div>
+
+      <div class="row content">
+        <!-- <img class="d-flex justify-content-center" src="assets/img/apa_pemilos/2.png" alt=""> -->
+        <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150"> -->
+          <!-- <ul>
+            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+          </ul> -->
+        <!-- </div> -->
+        <div class="col-lg-12 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <p class="">
+            Adanya seleksi wawancara sebagai pembuka dari rangkaian acara Pemilos 2020. Tahapan wawancara diikuti oleh 18 Besar Calon Mitratama OSIS hasil lolosan LKS ( Latihan Kepemimpinan Siswa ) II OSIS. Mereka akan diwawancarai oleh 3 dewan guru dan 5 Pengurus OSIS Periode 2019/2020. 5 Pengurus OSIS di antaranya dari Mitratama, Mitramuda I, Mitramuda II, Kasie 5 dan Kasie 8 OSIS. Pelaksanaan Wawancara akan dilakukan pada Senin, 2 November 2020.
+          </p>
+
+          <p>
+            Sistem wawancara akan dilaksanakan 2 sesi wawancara secara offline. Terdapat 4 pos yang akan dimasuki oleh masing-masing peserta. Setiap posnya peserta diberikan waktu selama 4 menit. Untuk wawancaranya mencakup aspek kepribadian dan kepemimpinan.
+          </p>
+
+          <p>
+            Dari seleksi wawancara yang telah dilaksanakan, akan terpilih 8 Besar Calon Mitratama yang akan lanjut ke tahap selanjutnya yaitu Forum 8 Besar. Forum 8 Besar akan dilaksanakan secara online.
+          </p>
+
+          <p>
+            Ingin tahu lebih lanjut mengenai tahapan selanjutnya? Yuk, simak terus website Pemilos 2020!
+          </p>
+  
+          <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+        </div>
+
+        <div class="col-lg-1 offset-lg-1">
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row judul">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Forum 8 Besar</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container wawancara-isi">
+      <div class="row wawancara-isi-judul text-center">
+        <div class="col-lg-12 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <h4>Tahap 2 Pemilos 2020</h4>
+          <h6>Kamis, 4 November 2020</h6>
+          <br>
+        </div>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-12 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <p class="">
+            Pada Kamis, 4 November 2020 akan dilaksanakan seleksi Forum 8 Besar Calon Mitratama. Forum 8 Besar akan dihadiri oleh Perwakilan Kelas X,XI, dan XII secara daring serta 3 Dewan Juri secara luring pada Ruang Multimedia. 
+          </p>
+
+          <p>
+            Dalam forum ini, 8 Besar Calon Mitratama akan memaparkan biodata diri, visi dan misi apabila mereka terpilih menjadi mitratama. Setelah itu, setiap Calon Mitratama akan mendapatkan pertanyaan dari Dewan Juri dan ditambah dengan pertanyaan dari Perwakilan Kelas yang dipilih melalui sistem tampung. 
+          </p>
+
+          <p>
+            Forum 8 Besar Calon Mitratama diakhiri dengan musyawarah yang dipimpin oleh Muhamad Asahab selaku Ketua MPK Periode 2020/2021. Perwakilan Kelas ikut menentukan hasil dari musyawarah tersebut sehingga setiap Perwakilan Kelas diberikan kesempatan untuk menyampaikan pendapatnya. Setelah Forum 8 Besar dilaksanakan, 3 Besar Calon Mitratama yang terpilih akan mengikuti tahap selanjutnya yaitu Orasi.
+          </p>
+
+          <p>
+            Ingin tahu lebih lanjut mengenai tahapan selanjutnya? Yuk, simak terus website Pemilos 2020!
+          </p>
+  
+          <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+        </div>
+
+        <div class="col-lg-1 offset-lg-1">
+
+        </div>
+      </div>
+  </section>
+
+  <!-- end Wawancara Section -->
+
+  <!-- Dokumentasi Section -->
+    <!-- <section class="dokumentasi-judul">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Dokumentasi</h2>
+        </div>
+      </div>
+    </section> -->
+ 
+    <section id="dokumentasi" class="dokumentasi">
+
+      <div class="container d-flex justify-content-center">
+
+        <div class="row text-center d-flex justify-content-center">
+          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                          
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                          
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+                            
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  <!-- end Dokumentasi Section -->
+
   <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq">
+    <!-- <section id="faq" class="faq">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
           <h2>Apa Sih Pemilos itu?</h2>
-        </div>
+        </div> -->
 
         <!-- <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
@@ -454,17 +1416,17 @@
         </div> -->
         <!-- End F.A.Q Item-->
 
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <!-- <div class="col-lg-5">
+        <!-- <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-5">
             <i class="ri-question-line"></i>
             <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
-          </div> -->
+          </div>
           <div class="col-lg-12 d-flex justify-content-end">
             <h4>
               Apa sih Pemilos itu?
             </h4>
           </div>
-        </div>
+        </div> -->
         <!-- End F.A.Q Item-->
 
         <!-- <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
@@ -493,8 +1455,8 @@
         </div> -->
         <!-- End F.A.Q Item-->
 
-      </div>
-    </section>
+      <!-- </div>
+    </section> -->
   <!-- End F.A.Q Section -->  
 
   <!-- <main id="main"> -->
@@ -691,85 +1653,116 @@
     <section id="about" class="about">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
+        <!-- <div class="section-title" data-aos="fade-up">
           <h2>Sosialisasi</h2>
-        </div>
+        </div> -->
+      
+      </div>
+
+      <div class="container merah-1">
 
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              Gambar
-            </p>
+          <!-- <img class="d-flex justify-content-center" src="assets/img/apa_pemilos/2.png" alt=""> -->
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150"> -->
             <!-- <ul>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
               <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
             </ul> -->
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <h3>
-              Apa itu Pemilos?
-            </h3>
-            <p>
+          <!-- </div> -->
+          <div class="col-lg-5 offset-lg-5 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <p class="">
               Pemilos ( Pemilihan Mitratama Osis ) adalah program kerja dari MPK ( Musyawarah Perwakilan Kelas ) SMA Negeri 3 Semarang, yang bertujuan untuk memilih Ketua OSIS ( Mitratama ) dan wakil Ketua OSIS ( Mitramuda I dan Mitramuda II ) yang dipilih oleh seluruh warga SMA Negeri 3 Semarang. Pemilos diselenggarakan sebagai bentuk edukasi demokrasi dini untuk mempersiapkan Pemilu di masa akan datang.
-            </p><br><br><br>
-
-
-
+            </p>
+    
             <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
           </div>
 
-        </div>
-
-        <div class="row content">
-
-          <div class="col-lg-12 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-
-            <h5>Untuk menentukan Mitratama OSIS perlu beberapa tahapan nih, di antaranya :</h5><br>
-            
-            <ul>
-              <li><p>Tahap I</p></li>
-              <br>
-              <p>Pada tahap pertama akan dilakukan Tes Wawancara. Pada Tes Wawancara ini akan diikuti oleh 18 Besar Calon Mitratama OSIS yang telah melakukan LKS 2. Pada pandemi ini wawancara akan dilakukan secara online. Setelah Tes wawancara dilakukan, akan diumumkan 8 Besar Calon Miratama OSIS untuk mengikuti tahap selanjutnya.
-              </p>
-              <br>
-
-              <li><p>Tahap II</p></li>
-              <br>
-              <p>Tahapan yang kedua yaitu Forum Calon Mitratama. Nah, pada forum ini Calon Mitratama OSIS akan memaparkan data diri, visi misi dan program kerja yang akan mereka laksanakan saat terpilih menjadi Mitratama.</p>
-              <br>
-
-              <li><p>Tahap III</p></li>
-              <br>
-              <p>Tahap yang ketiga adalah Orasi dan Kampaye. Setelah dilakukannya tahap II akan mengasilkan 3 Besar Calon Mitratama yang akan melaksanakan orasi. Setiap Calon Mitratama akan memaparkan visi misi mereka yang akan ditampilkan di IGTV Instagram @mpksmaga.
-              </p>
-
-              <p>
-              Setelah itu akan diadakan Kampaye. Masing-masing tim sukses akan menyuarakan jargon dan yel-yel mereka dengan semenarik mungkin di Sosial Media Tiktok. Akan ada hadiah menarik bagi pemenang kampaye terbaik, lho!
-              </p>
-              <br>
-
-              <li><p>Tahap IV</p></li>
-              <br>
-              <p>Selanjutnya ada tahapan Debat Program Kerja. Dalam debat proker ini 3 Besar Calon Mitratama akan memaparkan visi misi dan program kerja mereka serta menyampaikan opini mereka secara bergiliran.</p>
-              <br>
-
-              <li><p>Tahap V</p></li>
-              <br>
-              <p>Setelah berbagai tahap yang telah kita lalui, tiba Tahap Pemungutan suara. Pada tahap ini seluruh warga sekolah akan memilih Calon Mitratama OSIS secara online.</p>
-              <br>
-              <br>
-
-              <p>
-              Pada PEMILOS 2020 terdapat hal menarik yang pastinya gak kalah seru dengan tahun sebelumnya. Akan ada E-Volition, disini kalian akan memberikan suara untuk Calon Mitratama OSIS secara online melalui website yang telah kami sediakan. Selain itu akan ada Virtual POV yang nantinya akan muncul apabila kalian sudah memberikan suara kepada salah satu kandidat Mitratama OSIS dan juga kalian bisa menuliskan aspirasi pada Virtual POV tersebut!
-              </p>
-            </ul>
+          <div class="col-lg-1 offset-lg-1">
 
           </div>
-
         </div>
 
       </div>
+
+      <div class="container merah-2 text-left">
+        <div class="row content">
+
+          <div class="col-lg-9 offset-lg-1 mt-5 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+
+            <ul>
+              <li>
+                <h5>Untuk menentukan Mitratama OSIS perlu beberapa tahapan nih, di antaranya :</h5>
+              </li>
+            </ul>
+            
+            <ul>
+              <li><p>1. Tahap I</p></li>
+              <li>
+              <p>Pada tahap pertama akan dilakukan Tes Wawancara. Pada Tes Wawancara ini akan diikuti oleh 18 Besar Calon Mitratama OSIS yang telah melakukan LKS 2. Pada pandemi ini wawancara akan dilakukan secara online. Setelah Tes wawancara dilakukan, akan diumumkan 8 Besar Calon Miratama OSIS untuk mengikuti tahap selanjutnya.
+              </p>
+              </li>
+              <br>
+
+              <li><p>2. Tahap II</p></li>
+              <li>
+              <p>Tahapan yang kedua yaitu Forum Calon Mitratama. Nah, pada forum ini Calon Mitratama OSIS akan memaparkan data diri, visi misi dan program kerja yang akan mereka laksanakan saat terpilih menjadi Mitratama.</p>
+              </li>
+              <br>
+
+              <li><p>3. Tahap III</p></li>
+              <li>
+              <p>Tahap yang ketiga adalah Orasi dan Kampaye. Setelah dilakukannya tahap II akan mengasilkan 3 Besar Calon Mitratama yang akan melaksanakan orasi. Setiap Calon Mitratama akan memaparkan visi misi mereka yang akan ditampilkan di IGTV Instagram @mpksmaga .
+              </p>
+              </li>
+
+              <li>
+              <p>
+                Setelah itu akan diadakan Kampaye. Masing-masing tim sukses akan menyuarakan jargon dan yel-yel mereka dengan semenarik mungkin di Sosial Media Tiktok. Akan ada hadiah menarik bagi pemenang kampaye terbaik, lho!
+              </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-1 offset-lg-1">
+
+          </div>
+        </div>      
+      </div>
+
+      <div class="container merah-3 text-left">
+        <div class="row content">
+
+          <div class="col-lg-9 offset-lg-1  pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+              <ul>  
+                <li><p>4. Tahap IV</p></li>
+                <li>
+                <p>Selanjutnya ada tahapan Debat Program Kerja. Dalam debat proker ini 3 Besar Calon Mitratama akan memaparkan visi misi dan program kerja mereka serta menyampaikan opini mereka secara bergiliran.</p>
+                </li>
+                <br>
+
+                <li><p>5. Tahap V</p></li>
+                <li>
+                <p>Setelah berbagai tahap yang telah kita lalui, tiba Tahap Pemungutan suara. Pada tahap ini seluruh warga sekolah akan memilih Calon Mitratama OSIS secara online.</p>
+                </li>
+                <br>
+
+                <li>
+                <p>
+                  Pada PEMILOS 2020 terdapat hal menarik yang pastinya gak kalah seru dengan tahun sebelumnya. Akan ada E-Volition, disini kalian akan memberikan suara untuk Calon Mitratama OSIS secara online melalui website yang telah kami sediakan. Selain itu akan ada Elevatio Da Aspiration yang nantinya akan muncul apabila kalian sudah memberikan suara kepada salah satu kandidat Mitratama OSIS dan juga kalian bisa menuliskan aspirasi pada Elevatio Da Aspiration tersebut!
+                </p>
+                </li>
+              </ul>
+
+          </div>
+
+          <div class="col-lg-1 offset-lg-1">
+
+          </div>
+        </div>
+
+      </div>
+
     </section>
     <!-- End About Us Section -->
 
@@ -1164,18 +2157,18 @@
 
       </div>
     </section> -->
-    <!-- End Pricing Section -->
+  <!-- End Pricing Section -->
 
 
 
   <!-- Tata Cara Pemilihan -->
 
-  <section id="pricing" class="pricing">
+  <section id="pricing-2" class="pricing">
     <div class="container">
 
-      <div class="section-title">
+      <!-- <div class="section-title">
         <h2>Tata Cara Pemilihan</h2>
-      </div>
+      </div> -->
 
       <div class="row d-flex justify-content-center">
 
@@ -1205,6 +2198,10 @@
           </div>
         </div>
 
+        <div class="col-lg-4">
+
+        </div>
+
         <!-- <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
           <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
             <h3>Developer</h3>
@@ -1227,18 +2224,59 @@
     </div>
   </section>
 
-  <!-- end Tata Cara Pemilihan -->    
+  <!-- end Tata Cara Pemilihan --> 
+  
+  <!-- ======= Sponsor Section ======= -->
+    <section id="sponsor" class="sponsor">
+      <div class="container">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-lg-2 sponsor-box d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+  
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                           
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                           
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+                            
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  <!-- End Sponsor Section -->
 
       <!-- ======= Services Section ======= -->
         <section id="services" class="services">
           <div class="container">
     
-            <div class="section-title" data-aos="fade-up">
+            <!-- <div class="section-title" data-aos="fade-up">
               <h2>Sponsor</h2>
               <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
-            </div>
+            </div> -->
     
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon"><i class="bx bxl-dribbble"></i></div>
@@ -1271,10 +2309,10 @@
                 </div>
               </div>
     
-            </div>
+            </div> -->
     
             <div class="row mt-5 tentang_kami">
-              <div class="col-md-6 col-lg-12 justify-content-center  mb-5 mb-lg-0"  data-aos="fade-up" data-aos-delay="400">
+              <div class="col-md-6 col-lg-12 justify-content-center mb-5 mb-lg-0"  data-aos="fade-up" data-aos-delay="400">
                 <p class="description">Tentang Kami</p>
               </div>
             </div>
@@ -1301,14 +2339,27 @@
                       E-mail : mpksma3smg@gmail.com
                     </p>
                   </div>
+
+                  <div class="sosmed col-md-6 col-lg-6 offset-lg-5">
+                    
+                      <a href="https://twitter.com/MPKsmaga" target="blank">
+                        <img src="assets/img/ig_ok.png" alt="">
+                      </a>
+                      <p><a href="https://www.instagram.com/mpksmaga" target="blank">@mpksmaga</a></p>
+
+                    
+                      <a href="https://twitter.com/MPKsmaga" target="blank">
+                        <img src="assets/img/twitterok.png" alt="">
+                      </a>
+                      <p><a href="https://twitter.com/MPKsmaga" target="blank">@MPKsmaga</a></p>
+                    
+                    
+                      <a href=""><img src="assets/img/lineok.png" alt=""></a>
+                      <p><a href="#">@mpksmaga</a></p>
+                    
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row mt-5 sosmed">
-
-              
-
             </div>
             
 
@@ -1409,7 +2460,7 @@
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">Edogawa</a>
+            Designed by <a href="https://www.instagram.com/edogawawawaaaa/"  target="blank">Edogawa</a>
           </div>
         </div>
         <div class="col-lg-6">
