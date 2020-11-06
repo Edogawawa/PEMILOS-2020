@@ -180,7 +180,7 @@
 
     .dokumentasi .icon-box {
       width: 300px;
-      height: 300px;
+      height: 169px;
       padding: 30px;
       /* position: relative; */
       top: 100px;
@@ -193,6 +193,44 @@
       border-radius: 8px;
       z-index: 1;
       margin-top: 10px;
+    }
+
+    .dokumentasi .box-1 {
+      background-image: url(assets/img/phon-desu/sosialisasi-phon.png);
+    }
+
+    .dokumentasi .box-2 {
+      background-image: url(assets/img/phon-desu/wawancara-1-res.png);
+    }
+
+    .dokumentasi .box-3 {
+      background-image: url(assets/img/phon-desu/wawancara-2-res.png);
+    }
+
+    .dokumentasi .box-4 {
+      background-image: url(assets/img/phon-desu/mboh.png);
+    }
+
+    .dokumentasi .box-1 p,
+    .dokumentasi .box-2 p,
+    .dokumentasi .box-3 p,
+    .dokumentasi .box-4 p {
+      font-weight: 500;
+      font-size: 0px;
+      margin-top: 40px;
+      color: whitesmoke;
+      visibility: hidden;
+      transition: 1s;
+    }
+
+    .dokumentasi .box-1:hover p,
+    .dokumentasi .box-2:hover p,
+    .dokumentasi .box-3:hover p,
+    .dokumentasi .box-4:hover p {
+      visibility: visible;
+      transition: 1s;
+      transform: scale(1.5) rotate(360deg);
+      font-size: 10px;
     }
 
     .dokumentasi .icon-box::before {
@@ -209,7 +247,8 @@
     }
 
     .dokumentasi .icon-box:hover::before {
-      background: #3498db;
+      background: #052854;
+      opacity: 0.4;
       right: 0;
       top: 0;
       width: 100%;
@@ -627,8 +666,8 @@
         text-decoration: underline ;
       }
 
-      .dokumentasi {
-        height: 650px;
+      .wawancara {
+        margin-bottom: 50px;
       }
 
       /* .dokumentasi-judul {
@@ -637,6 +676,7 @@
 
       .dokumentasi {
         background-image: url(assets/img/dokumentasi.png) !important;
+        height: 1150px;
       }
 
       .dokumentasi-judul .section-title h2 {
@@ -646,18 +686,59 @@
       }
 
       .dokumentasi .icon-box {
-        width: 150px;
-        height: 150px;
+        width: 500px;
+        height: 281px;
         padding: 30px;
         position: relative;
-        top: 150px;
+        top: 100px;
         overflow: hidden;
-        background: rgb(233, 142, 72);
+        background-color: rgb(233, 142, 72);
+        background-image: url();
         box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
-        transition: all 0.3s ease-in-out;
+        transition: all 1s ease-in-out;
         border-radius: 8px;
         z-index: 1;
-        margin-top: 80px;
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+
+      .dokumentasi .box-1 {
+        background-image: url(assets/img/sosialisasi-res.png);
+      }
+
+      .dokumentasi .box-1 p,
+      .dokumentasi .box-2 p,
+      .dokumentasi .box-3 p,
+      .dokumentasi .box-4 p {
+        font-weight: 500;
+        font-size: 0px;
+        text-shadow: rgba(68, 88, 144, 0.12);
+        margin-top: 90px;
+        color: whitesmoke;
+        visibility: hidden;
+        transition: 1s;
+      }
+
+      .dokumentasi .box-1:hover p,
+      .dokumentasi .box-2:hover p,
+      .dokumentasi .box-3:hover p,
+      .dokumentasi .box-4:hover p {
+        visibility: visible;
+        transition: 1s;
+        transform: scale(1.3) rotate(360deg);
+        font-size: 20px;
+      }
+
+      .dokumentasi .box-2 {
+        background-image: url(assets/img/wawancara-res.png);
+      }
+
+      .dokumentasi .box-3 {
+        background-image: url(assets/img/mboh-res.png);
+      }
+
+      .dokumentasi .box-4 {
+        background-image: url(assets/img/mboh2-res.png);
       }
 
       .dokumentasi .icon-box::before {
@@ -674,7 +755,8 @@
       }
 
       .dokumentasi .icon-box:hover::before {
-        background: #3498db;
+        background: #052854;
+        opacity: 0.4;
         right: 0;
         top: 0;
         width: 100%;
@@ -755,7 +837,7 @@
 
       #pricing-2 {
         background-image: url(assets/img/vid_tatacara.png);
-        width: 1350px;
+        min-width: 1260px;
         height: 650px;
         background-repeat: repeat-x;
         background-color: #b60707;
@@ -768,7 +850,7 @@
 
       #pricing-2 .container .box {
         margin-top: 285px;
-        margin-left: 100px;
+        margin-left: 60px;
         position: relative;
         top: -60px;
         right: 30px;
@@ -806,7 +888,7 @@
       .sponsor {
         background-image: url(assets/img/revisi_apa_pemilos/6.png);
         height: 650px;
-        margin-top: -60px;
+        margin-top: 0;
       }
 
       .sponsor .icon-box {
@@ -958,7 +1040,7 @@
           <ul>
             <li class="active"><a href="#hero">BERANDA</a></li>
             <li><a href="#about">TENTANG</a></li>
-            <li><a href="#services">INFORMASI</a></li>
+            <li><a href="#team">INFORMASI</a></li>
             <li><a href="#pricing-2">TATA CARA</a></li>
             <!-- <li><a href="#team">Team</a></li>
             <li><a href="#pricing">Pricing</a></li> -->
@@ -1104,9 +1186,11 @@
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
                 <div>
+                  <a href="#wawancara">
                   <p>
                     ipsum dolor sit amet consectetur adipisicing elit. Officia illo suscipit earum aut quaerat obcaecati, numquam laboriosam. Incidunt, repudiandae eius.
                   </p>
+                  </a>
                 </div>
                 <!-- <img src="assets/img/informasi/Wawancara.png" class="img-fluid" alt=""> -->
                 <!-- <div class="social">
@@ -1122,14 +1206,18 @@
               </div> -->
             </div>
           </div>
+          
 
+          
           <div class="box box-2 col-lg-2 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
                 <div>
+                  <a href="#forum">
                   <p>
                     ipsum dolor sit amet consectetur adipisicing elit. Officia illo suscipit earum aut quaerat obcaecati, numquam laboriosam. Incidunt, repudiandae eius.
                   </p>
+                  </a>
                 </div>
                 <!-- <img src="assets/img/informasi/Forum 8 Besar.png" class="img-fluid" alt=""> -->
                 <!-- <div class="social">
@@ -1224,7 +1312,7 @@
 
   <!-- Wawancara Section -->
 
-  <section class="wawancara">
+  <section class="wawancara" id="wawancara">
 
     <div class="row judul">
       <div class="container">
@@ -1280,7 +1368,7 @@
     </div>
   </section>
 
-  <section class="wawancara wawancara-1">
+  <section class="wawancara wawancara-1" id="forum">
     <div class="row judul">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
@@ -1341,34 +1429,35 @@
       <div class="container d-flex justify-content-center">
 
         <div class="row text-center d-flex justify-content-center">
-          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box box-1" data-aos="fade-up" data-aos-delay="100">
+              <p>Sosialisasi Pemilos 2020</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box box-2" data-aos="fade-up" data-aos-delay="200">
+              <p>Seleksi Wawancara</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                          
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box box-3" data-aos="fade-up" data-aos-delay="300">
+              <p>Seleksi Wawancara</p>        
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-                          
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box box-4" data-aos="fade-up" data-aos-delay="400">
+              <p>Forum 8 Besar Calon Mitratama OSIS</p>   
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-2 d-flex align-items-stretch mb-5 mb-lg-0">
+          <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
                             
             </div>
-          </div>
+          </div> -->
 
         </div>
 
